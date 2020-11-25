@@ -4,6 +4,11 @@
 ### Overview 
 AgriScan is a crop damage analysis tool built for farmers to locate areas of crop damage and calculate the area of damage. This project made up the coursework element of my A-Level in Computer Science.
 
+
+![Alt text](sampleImage.jpg?raw=true "Title")
+![Alt text](result_2020_11_25_13_46_16.jpg?raw=true "Title")
+
+
 ### How it works
 AgriScan requires the image uploaded to have a distinct rectangular white marker (a beedsheet) visible in the frame. A Hue Saturation Value (HSV) subtraction for a range of white values is made to locate the marker within the image. The area of the marker is known, so the number of pixels that make up the marker in the image (found from the colour subtraction) can be used to work out the number of pixels that represent 1m^2. The user can then use the trackbar to manipulate the HSV values of the mask to fit the area of damage seen on the image. The number of pixels in the damage mask is then compaired to the number of pixels in the white marker to calculate the total area of damage. 
 
